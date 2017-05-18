@@ -5,7 +5,6 @@ document.getElementById('nav').onmouseover = function(event) {
         closeMenu();
         s[0].style.display = 'block';
         console.log("s display ",s[0]);
-
     }
 }
 
