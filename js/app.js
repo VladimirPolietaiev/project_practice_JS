@@ -5,13 +5,12 @@ document.getElementById('nav').onmouseover = function(event) {
         closeMenu();
         s[0].style.display = 'block';
         console.log("s display ",s[0]);
-    }
+     }
 }
 
 document.onmouseover = function(event) {
     var target = event.target;
-    console.log(target);
-    if (target.className != ' menu-item' && target.className != 'submenu'){
+    if (target.className != 'menu-item' && target.className != 'submenu'){
         closeMenu();
     }
 }
