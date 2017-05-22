@@ -25,7 +25,7 @@
     padding: 5px 10px ;
     cursor: pointer;
     position: relative;
-    z-index: 5;
+    z-index: 4;
 }
 
 #tabs .whiteborder{
@@ -51,4 +51,45 @@
 
 #tabs .show {
     display: block;
+}
+/*////////////////////////////////////*/
+
+/*/////////// modal mindow*/
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 13;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #243740;
+}
+
+.modal_content{
+    background-color: #32f1e7;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #13596b;
+    width: 25%;
+    height: 30%;
+
+
+}
+
+.close{
+    color: #0e2020;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -25px;
+    margin-right: -15px;
+}
+
+#mybtn{
+    float: right;
+    margin: 10px;
 }
