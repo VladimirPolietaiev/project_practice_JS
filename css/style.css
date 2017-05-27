@@ -52,6 +52,10 @@
 #tabs .show {
     display: block;
 }
+
+#nav{
+    margin-bottom: 60px;
+}
 /*////////////////////////////////////*/
 
 /*/////////// modal mindow*/
@@ -92,6 +96,7 @@
 #mybtn{
     float: right;
     margin: 10px;
+
 }
 
 /*//////////////SLIDER////////////////*/
@@ -199,4 +204,42 @@
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+/*"Search for name"*/
+
+#search{
+    margin-top: 250px;
+}
+
+#myInput{
+    width: 100%;
+    font-size: 16px;
+    border:1px solid #0000ed;
+    margin-bottom: 12px;
+}
+
+#myUL{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a{
+    border: 1px solid #0000ed;
+    margin-top: -1px;
+    background-color: #00a3a3;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #0e0e0e;
+    display: block;
+}
+#myUL li a.header{
+    background-color: #3D9970;
+    cursor: default;
+}
+
+#myUL li a:hover:not(.header){
+    background-color: #0a7261;
 }
