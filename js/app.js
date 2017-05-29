@@ -142,6 +142,18 @@ function myFunction() {
 }
 
 
+/*//////map   API   //////////*/
+
+
+function initMap() {
+    var  map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 49.8000, lng: 24.0000},
+        scrollwheel:true,
+        zoom: 8
+    })
+}
+
+
 
 
 

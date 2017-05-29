@@ -35,7 +35,6 @@
     }
 
 #tabs .tabContent {
-    width: 300px;
     height: 60px;
     border:1px solid #81ee86;
     position: relative;
@@ -242,4 +241,17 @@
 
 #myUL li a:hover:not(.header){
     background-color: #0a7261;
+}
+
+/*//////// map ////////*/
+
+#map {
+    height: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
