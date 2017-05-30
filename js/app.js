@@ -48,12 +48,13 @@ function hideTabsContent(a) {
 
 document.getElementById('tabs').onclick= function (event) {
     var target = event.target;
-    
+
     if (target.className == 'tab'){
         
         for (var i =0; i< tab.length; i++){
             if (target == tab[i]){
                 showTabsContent(i);
+                move(i);
                 break;
             }
         }
@@ -187,6 +188,25 @@ window.onload = function () {
     span.onclick = function(){
         modalBlock.style.transform = 'translateY(-500%)';
         setTimeout(	close, 500);
+    }
+}
+
+
+////////     progres bar  ////////
+
+function move(){
+    var elem = document.getElementById("tabContent");
+    var width = 0;
+    var id = setInterval(frame, 10);
+    function frame(){
+        if(width>=100){
+            clearInterval(id);
+        }else{
+            width++;
+            elem.style.width = width + '%';
+            elem.style.backgroundColor = '#81ee86';
+
+        }
     }
 }
 
