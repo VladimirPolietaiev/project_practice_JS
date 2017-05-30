@@ -54,7 +54,6 @@ document.getElementById('tabs').onclick= function (event) {
         for (var i =0; i< tab.length; i++){
             if (target == tab[i]){
                 showTabsContent(i);
-                move(i);
                 break;
             }
         }
@@ -67,6 +66,7 @@ function showTabsContent(b) {
         tab[b].classList.add('whiteborder');
         tabContent[b].classList.remove('hide');
         tabContent[b].classList.add('show');
+        move(tabContent[b]);
     }
 };
 
@@ -191,11 +191,11 @@ window.onload = function () {
     }
 }
 
-
 ////////     progres bar  ////////
 
-function move(){
-    var elem = document.getElementById("tabContent");
+function move(tabContent){
+    console.log("tabContent ", tabContent.classList)
+    var elem = tabContent;
     var width = 0;
     var id = setInterval(frame, 10);
     function frame(){
