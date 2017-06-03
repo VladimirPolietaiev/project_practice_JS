@@ -429,3 +429,32 @@ popup
     from{opacity:0;}
     to{opacity:1;}
 }
+
+
+/*---------
+accordion
+---------*/
+
+button.accordion{
+    background-color: #eee;
+    color: #444;
+    cursor: poiner;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+button.accordion.active,
+button.accordion:hover{
+    background-color: #ddd;
+}
+div.panel{
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+div.panel.show{
+    display: block;
+}
