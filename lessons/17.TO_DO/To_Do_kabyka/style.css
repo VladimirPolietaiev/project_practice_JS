@@ -1,0 +1,19 @@
+.task{
+ width:160px;
+ background-color:#eee;
+ border:1px solid white;
+ position:relative;
+ padding-left:20px;
+}
+.close{
+ position:absolute;
+ cursor:pointer;
+ right:10px;
+}
+.checkBox{
+ position:absolute;
+ left:0px;
+}
+.checked{
+ text-decoration:line-through;
+}
