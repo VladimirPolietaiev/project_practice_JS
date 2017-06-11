@@ -4,7 +4,7 @@ $('button').on('click', function() {
             alert('Выбран ' + index + ' элемент!');
             }
     })
-});
+}); 
 
 
 
